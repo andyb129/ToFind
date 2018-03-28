@@ -8,6 +8,8 @@ This is a demo project to try and render the design from the Uplabs project belo
 <img src="https://github.com/andyb129/ToFind/blob/master/screenshots/to_find_anim.gif" height="600" alt="ToFind"/>
 </p>
 
+There is also a **Kotlin** version which I'm currently working on, but have yet to convert all classes (see *kotlin-version* branch).
+
 ## Usage
 
 To get the **Google map** working in the app you will have to register to get a Google maps API key (instructions here > [https://developers.google.com/maps/documentation/android-api/signup](https://developers.google.com/maps/documentation/android-api/signup))  
@@ -20,6 +22,7 @@ TO_FIND_GOOGLE_MAP_API_KEY=Abc12shshshshshiqeuwwr
 1. Get material transition working between ViewPager & Fragment
 2. Add map above pager count on main screen & move with viewpager
 3. Round corners on carousel box
+4. Convert app code to Kotlin
 
 ### Thanks
 
