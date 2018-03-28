@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#7986CB</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="review_text_colour">#b3b3b3</color>
+    <color name="review_background_colour">#ffffff</color>
+    <color name="review_image_border_colour">#FF90a4ae</color>
+
+    <color name="ticker_total_text_colour">#ffffff</color>
+    <color name="ticker_text_colour">#7986CB</color>
+    <color name="site_text_colour">#ffffff</color>
+    <color name="tab_indicator_colour">#ffffff</color>
+    <color name="toolbar_top_colour">#000000</color>
+    <color name="toolbar_bottom_colour">#ffffffff</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="toolbar_title">#ffffff</color>
+
+    <color name="main_background">#000000</color>
+    <color name="site_name_shadow">#000000</color>
+    <color name="review_list_background">#e3e3e3</color>
+</resources>

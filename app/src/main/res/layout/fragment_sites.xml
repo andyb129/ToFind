@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<uk.co.barbuzz.tofind.customviews.parallaxviewpager.ParallaxViewPager1
+        android:id="@+id/location_view_pager_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/waterfront_cranes"
+        app:speedRatio="0.5"/>-->
+
+    <uk.co.barbuzz.tofind.customviews.kenburnsview.KenBurnsView
+        android:id="@+id/location_ken_burns_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back_waterfront_cranes" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1e000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <uk.co.barbuzz.tofind.customviews.ticker.TickerView
+                    android:id="@+id/view_pager_page_number_ticker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:padding="8dp"
+                    android:shadowColor="@android:color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    tools:text="1"
+                    android:textColor="@color/ticker_text_colour"
+                    android:textSize="@dimen/ticker_text_size"
+                    android:textStyle="bold"
+                    app:ticker_animationDuration="500"
+                    app:ticker_defaultCharacterList="number" />
+                <TextView
+                    android:id="@+id/view_pager_ticker_total_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:padding="8dp"
+                    android:shadowColor="@android:color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    tools:text=" / 10"
+                    android:textColor="@color/ticker_total_text_colour"
+                    android:textSize="@dimen/ticker_text_size"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/location_map_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/location_view_pager_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:clipToPadding="false"
+            android:paddingLeft="@dimen/activity_main_view_pager_padding_left_right"
+            android:paddingRight="@dimen/activity_main_view_pager_padding_left_right"
+            android:paddingTop="@dimen/activity_main_view_pager_padding_top"
+            android:paddingBottom="@dimen/activity_main_view_pager_padding_bottom"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ToFind</string>
+
+    <string name="view_pager_total" >   /   %1$d</string>
+
+    <string name="site_image_transition_name">siteimage</string>
+    <string name="site_title_transition_name">sitetitle</string>
+    <string name="review_profile_image_transition_name">profileimage</string>
+    <string name="review_name_transition_name">reviewname</string>
+    <string name="review_text_transition_name">reviewtext</string>
+    <string name="review_comments_transition_name">reviewcomments</string>
+    <string name="review_views_transition_name">reviewviews</string>
+    <string name="review_likes_transition_name">reviewlikes</string>
+
+    <array name="transition_tags">
+        <item>siteimage</item>
+        <item>sitetitle</item>
+        <item>profileimage</item>
+        <item>reviewname</item>
+        <item>reviewtext</item>
+        <item>reviewcomments</item>
+        <item>reviewviews</item>
+        <item>eviewlikes</item>
+    </array>
+</resources>

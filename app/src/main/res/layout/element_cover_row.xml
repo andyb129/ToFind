@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/location_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/review_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- android:background="@drawable/review_box_background" -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <ImageView
+                android:id="@+id/site_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+            <TextView
+                android:id="@+id/site_image_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/location_text_margin_top"
+                android:textColor="@color/site_text_colour"
+                android:textSize="@dimen/location_text_size"
+                android:textStyle="bold"
+                android:text="CUISINE"
+                android:textAllCaps="true"
+                android:shadowColor="@color/site_name_shadow"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/review_layout_padding"
+                android:background="@color/review_background_colour">
+                <uk.co.barbuzz.tofind.customviews.circleimageview.CircleImageView
+                    android:id="@+id/review_profile_image"
+                    android:layout_width="@dimen/profile_image_width_height"
+                    android:layout_height="@dimen/profile_image_width_height"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/profile_jenny"
+                    app:civ_border_width="@dimen/profile_image_border_width"
+                    app:civ_border_color="@color/review_image_border_colour" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/review_profile_image"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/review_profile_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="@dimen/review_text_margin_bottom"
+                        android:textColor="@color/review_text_colour"
+                        android:textStyle="bold"
+                        android:text="Jenny" />
+                    <TextView
+                        android:id="@+id/review_profile_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/review_text_colour"
+                        android:text="Great place to visit!" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/review_views"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:drawableLeft="@drawable/ic_eye"
+                            android:drawablePadding="6dp"
+                            android:textColor="@color/review_text_colour"
+                            android:text="3,769" />
+                        <TextView
+                            android:id="@+id/review_comments"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:drawableLeft="@drawable/ic_comment"
+                            android:drawablePadding="6dp"
+                            android:textColor="@color/review_text_colour"
+                            android:text="87" />
+                        <TextView
+                            android:id="@+id/review_likes"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:drawableLeft="@drawable/ic_heart"
+                            android:drawablePadding="6dp"
+                            android:textColor="@color/review_text_colour"
+                            android:text="237" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
