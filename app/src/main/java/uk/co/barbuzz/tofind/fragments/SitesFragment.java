@@ -201,7 +201,7 @@ public class SitesFragment extends Fragment
             @Override
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
-                MainActivity.currentPosition = position;
+                MainActivity.Companion.setCurrentPosition(position);
 
                 kenBurnsImageView.swapImage(position, prevPosition);
                 viewPagerPageNumberTicker.setText(String.valueOf(position+1));
@@ -233,7 +233,7 @@ public class SitesFragment extends Fragment
                     @Override
                     public void onMapSharedElements(List<String> names, Map<String, View> sharedElements) {
                         Fragment currentFragment = (Fragment) viewPagerTop.getAdapter()
-                                .instantiateItem(viewPagerTop, MainActivity.currentPosition);
+                                .instantiateItem(viewPagerTop, MainActivity.Companion.getCurrentPosition());
                         View view = currentFragment.getView();
                         if (view == null) {
                             return;
