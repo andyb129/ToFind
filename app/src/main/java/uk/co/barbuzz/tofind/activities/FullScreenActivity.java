@@ -13,6 +13,10 @@ import com.squareup.picasso.Target;
 import uk.co.barbuzz.tofind.R;
 import uk.co.barbuzz.tofind.fragments.SitesFragment;
 
+/**
+ * PLEASE IGNORE : This class was just used for testing the material transition
+ * (See fragment 'ReviewsFragment' for detail screen)
+ */
 public class FullScreenActivity extends AppCompatActivity {
 
     @Override
@@ -23,7 +27,7 @@ public class FullScreenActivity extends AppCompatActivity {
         final ImageView imgFull=findViewById(R.id.imgFull);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            imgFull.setTransitionName(getString(R.string.site_image_transition_name)+0);//SitesFragment.EXTRA_TRANSITION_IMAGE);
+            imgFull.setTransitionName(getString(R.string.site_image_transition_name)+0);
         }
 
         Picasso.with(this).load(getIntent().getIntExtra(SitesFragment.EXTRA_IMAGE,0)).into(new Target() {
