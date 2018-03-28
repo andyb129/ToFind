@@ -5,7 +5,7 @@ This is a demo project to try and render the design from the Uplabs project belo
 [https://www.uplabs.com/posts/tofind-concept-controller](https://www.uplabs.com/posts/tofind-concept-controller)
 
 <p>
-<img src="https://github.com/andyb129/ToFind/blob/master/screenshots%2to_find_anim.gif" height="600" alt="ToFind"/>
+<img src="https://github.com/andyb129/ToFind/blob/master/screenshots/to_find_anim.gif" height="600" alt="ToFind"/>
 </p>
 
 ## Usage
